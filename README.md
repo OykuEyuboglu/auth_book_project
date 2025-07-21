@@ -1,50 +1,50 @@
-📚 Auth Book Project
+# 📚 Auth Book Project
 
 Auth Book Project is a full-stack cross-platform application that allows users to register, log in, and manage book purchases. The backend is built with **ASP.NET Core Web API** and uses **JWT-based authentication**, while the frontend is a **Flutter** app that communicates with the API to provide a smooth user experience.
 
 ---
 
-🌟 Features
+# 🌟 Features
 
-🔐 **User Authentication**  
+## 🔐 **User Authentication**  
 - Register & log in using email and password  
 - Secure authentication via JWT tokens
 
-📚 **Book Management**  
+## 📚 **Book Management**  
 - View all available books  
 - Purchase books and view your personal library  
 - Filter purchased and unpurchased books
 
-📦 **Token Storage**  
+## 📦 **Token Storage**  
 - Access token saved locally using `SharedPreferences`
 
-📈 **Real-Time Interaction**  
+## 📈 **Real-Time Interaction**  
 - Instant UI update after book purchase  
 - Error handling and loading indicators included
 
 ---
 
-🚀 Tech Stack
+# 🚀 Tech Stack
 
-🎯 Frontend  
+## 🎯 Frontend  
 - Flutter  
 - Dart  
 - SharedPreferences (local token storage)  
 - HTTP package for API communication  
 
-🛠 Backend  
+## 🛠 Backend  
 - ASP.NET Core Web API  
 - Entity Framework Core  
 - JWT Authentication  
 - SQL Server  
 
-🗄 Database  
+## 🗄 Database  
 - Microsoft SQL Server  
 - Code-first with EF Core
 
 ---
 
-🛠️ Getting Started
+# 🛠️ Getting Started
 
 ### 🔧 Backend Setup
 
