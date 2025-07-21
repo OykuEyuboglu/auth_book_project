@@ -55,5 +55,17 @@ namespace authBook_project.Controllers
             var books = await _bookService.GetPurchasedBooksAsync(userEmail);
             return Ok(books);
         }
+
+        [Authorize]
+        [HttpDelete("delete/{bookId}")]
+        public async Task<IActionResult> DeleteBook(int bookId)
+        {
+            var userEmail = User.FindFirstValue(ClaimTypes.Email);
+            if (string.IsNullOrEmpty(userEmail))
+                return Unauthorized("Email not found");
+
+            await _bookService.DeletePurchasedBookAsync(userEmail, bookId);
+            return Ok();
+        }
     }
 }

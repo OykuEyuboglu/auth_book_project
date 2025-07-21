@@ -14,11 +14,12 @@ namespace authBook_project.Services
             _dbcontext = dbcontext;
         }
 
-        public async Task<List<GetBookDTO>> GetAllBooksAsync()
+        public async Task<List<BookDTO>> GetAllBooksAsync()
         {
             return await _dbcontext.Books
-                .Select(b => new GetBookDTO
+                .Select(b => new BookDTO
                 {
+                    Id = b.Id,
                     Title = b.Title,
                     Author = b.Author,
                     Price = b.Price
@@ -36,6 +37,28 @@ namespace authBook_project.Services
             _dbcontext.Books.Add(book);
             await _dbcontext.SaveChangesAsync();
         }
+
+        public async Task DeletePurchasedBookAsync(string userEmail, int bookId)
+        {
+            var user = await _dbcontext.Users
+                .FirstOrDefaultAsync(u => u.Email == userEmail);
+
+            if (user == null)
+                throw new Exception("User not found");
+
+            var userBook = await _dbcontext.UserBooks
+                .FirstOrDefaultAsync(ub => ub.UserId == user.Id && ub.BookId == bookId);
+
+            if (userBook == null)
+                throw new Exception("Bu kitap kullanıcıya ait değil");
+
+            _dbcontext.UserBooks.Remove(userBook);
+            await _dbcontext.SaveChangesAsync();
+        }
+
+
+
+
 
         public async Task PurchaseBookAsync(string userEmail, int bookId)
         {
