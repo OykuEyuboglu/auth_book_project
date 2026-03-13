@@ -57,7 +57,7 @@ Users can browse available books, purchase them, and manage their personal book 
 
 # 📺 Demo Video
 
-[![Watch the demo](https://img.youtube.com/vi/Jayw-OYoraI/0.jpg)](https://youtube.com/shorts/bR5VdX_FwwQ?feature=share)
+[![Watch the demo]](https://youtube.com/shorts/bR5VdX_FwwQ?feature=share)
 
 > Click the thumbnail to watch the full demo.
 
