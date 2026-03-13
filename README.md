@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Book App](https://cdn-icons-png.flaticon.com/512/3135/3135755.png)
+![Book App](https://cdn-icons-png.flaticon.com/512/29/29302.png)
 
 *A full-stack cross-platform book purchasing application built with ASP.NET Core Web API and Flutter.*
 
@@ -57,7 +57,9 @@ Users can browse available books, purchase them, and manage their personal book 
 
 # 📺 Demo Video
 
-[![Watch the demo](https://youtube.com/shorts/bR5VdX_FwwQ?feature=share))
+[![Watch the demo](https://img.youtube.com/vi/Jayw-OYoraI/0.jpg)](https://youtube.com/shorts/bR5VdX_FwwQ?feature=share)
+
+> Click the thumbnail to watch the full demo.
 
 ---
 
